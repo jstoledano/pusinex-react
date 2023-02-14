@@ -1,11 +1,15 @@
-import pusinexLogo from './assets/pusinex.svg'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 
 function App() {
   return (
-    <div className="App">
-      <h1>Control de PUSINEX</h1>
+    <>
+      <div className="container py-3">
+        <Header />
+        <Footer />
     </div>
+    </>
   )
 }
 
