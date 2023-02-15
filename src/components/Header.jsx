@@ -1,17 +1,18 @@
 import React from 'react'
+import {Link } from "react-router-dom";
 import pusinexLogo from '../assets/pusinex.svg'
 
 const Header = () => {
   return (
     <header>
         <div className="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-        <a href="/" className="d-flex align-items-center text-dark text-decoration-none">
+        <Link to="/" className="d-flex align-items-center text-dark text-decoration-none">
             <img src={pusinexLogo} width="60px" alt="Icono PUSINEX" className="me-2" />
             <span className="fs-4">PUSINEX</span>
-        </a>
+        </Link>
 
         <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-            <a className="me-3 py-2 text-dark text-decoration-none" href="#"><i className="fa fa-key-modern" aria-hidden="true"></i> Administración</a>
+            <Link to={`/pusinex`} className="me-3 py-2 text-dark text-decoration-none" href="#"><i className="fa fa-key-modern" aria-hidden="true"></i> Administración</Link>
             <a className="me-3 py-2 text-dark text-decoration-none" href="#"><i className="fa fa-cloud-download" aria-hidden="true"></i> Descarga</a>
             <a className="py-2 text-dark text-decoration-none" href="#"><i className="fa fa-python" aria-hidden="true"></i> Acerca de</a>
         </nav>
